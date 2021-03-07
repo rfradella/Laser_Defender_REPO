@@ -64,7 +64,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DamageDealer.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyPathing.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Shredder.cs" />
+    <Compile Include="Assets\Scripts\WaveConfig.cs" />
     <None Include="Assets\Space Shooter Visual Assets\Spritesheet\sheet.xml" />
     <None Include="Assets\Space Shooter Visual Assets\license.txt" />
     <Reference Include="UnityEngine">
@@ -249,6 +255,15 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>F:/Programming IDEs/Unity/Editors/2019.4.20f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>F:/Programming IDEs/Unity/Editors/2019.4.20f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -598,17 +613,32 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -630,6 +660,12 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
@@ -661,6 +697,15 @@
     <Reference Include="Unity.2D.Animation.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
@@ -670,11 +715,20 @@
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>F:/Ray Files/DEVELOPMENT/UNITY/Udemy/Unity2D/5_Laser Defender/Laser_Defender_REPO/Laser_Defender/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
